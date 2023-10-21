@@ -1,7 +1,7 @@
 if ('SharedWorker' in window) {
 
     // Generate uuid (relying on an external script at this point)
-    const uuid = window.uuid.v4();
+    //const uuid = window.uuid.v4();
     //console.log('Generated UUID : ' + uuid);
 
     const worker = new SharedWorker('shared-worker.js');
@@ -26,7 +26,7 @@ if ('SharedWorker' in window) {
     worker.port.postMessage({
         'type': "message",
         'message': 'Hello from the main page!',
-        'client_id': uuid
+        //'client_id': uuid
     });
 
 
@@ -36,7 +36,7 @@ if ('SharedWorker' in window) {
         worker.port.postMessage({
             'type': "message",
             'message': 'Sending a message',
-            'client_id': uuid
+            //'client_id': uuid
         });
     }
     document.getElementById('send_button').onclick = buttonClick;

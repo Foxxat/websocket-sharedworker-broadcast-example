@@ -19,6 +19,10 @@
                 height: 100vh;
                 color: white;
             }
+
+            .padded-box {
+                padding: 2em;
+            }
         </style>
     </head>
 
@@ -33,11 +37,13 @@
         <p>Message :</p>
         <div id="messageDiv" class="content">
         </div>
-        <form class="pure-form">
-            <fieldset>
-                <button id="send_button" class="pure-button pure-button-secondary">Send</button>
-            </fieldset>
-        </form>
+        <div class="padded-box">
+            <form class="pure-form">
+                <fieldset>
+                    <button id="send_button" class="pure-button pure-button-secondary">Send</button>
+                </fieldset>
+            </form>
+        </div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
