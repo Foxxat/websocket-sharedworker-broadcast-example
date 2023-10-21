@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shared Worker Example</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pure/2.0.3/pure-min.css">
+        <style>
+            body {
+                background-color: #1f8dd6;
+                margin: 0;
+                display: flex;
+                justify-content: center;
+                height: 100vh;
+                color: white;
+            }
+        </style>
+    </head>
+
+<body>
+    <div class="content-wrapper">
+        <div class="content">
+            <h1>WebSocket with BroadcastChannel and SharedWorker example!</h1>
+        </div>
+        <p>Status :</p>
+        <div id="statusDiv" class="content">
+        </div>
+        <p>Message :</p>
+        <div id="messageDiv" class="content">
+        </div>
+        <form class="pure-form">
+            <fieldset>
+                <button id="send_button" class="pure-button pure-button-secondary">Send</button>
+            </fieldset>
+        </form>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/node-uuid/1.4.8/uuid.min.js"></script>
+    <script src="./main.js"></script>
+
+</body>
+
+</html>
