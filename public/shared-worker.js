@@ -5,11 +5,6 @@ const broadcastChannel = new BroadcastChannel("shared-worker-channel");
 
 const portMap = {};
 
-// webSocket.onopen = () =>
-//   broadcastChannel.postMessage({ type: "WSState", state: webSocket.readyState });
-// webSocket.onclose = () =>
-//   broadcastChannel.postMessage({ type: "WSState", state: webSocket.readyState });
-
 // WebSocket connection
 
 webSocket.onmessage = (event) => {
